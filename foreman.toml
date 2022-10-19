@@ -2,6 +2,6 @@
 
 [tools]
 selene = { source = "Kampfkarren/selene", version = "0.21.1" }
-run-in-roblox = { source = "rojo-rbx/run-in-roblox", version = "0.3.0" }
+run-in-roblox = { source = "reimakesgames/run-in-roblox", version = "0.3.3" }
 rojo = { source = "rojo-rbx/rojo", version = "7.2.1" }
 wally = { source = "UpliftGames/wally", version = "0.3.1" }
