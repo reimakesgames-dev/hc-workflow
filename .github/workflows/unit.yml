@@ -30,7 +30,7 @@ jobs:
         run: wally install
 
       - name: Build
-        run: rojo build --output test.rbxmx
+        run: rojo build --output output.rbxl
 
       # # Flip flag that causes issue
       # - name: Create fflag overrides
@@ -41,4 +41,4 @@ jobs:
       #     $flags | ConvertTo-Json -depth 32| set-content -Path 'C:/Program Files (x86)/Roblox/Versions/version-*/ClientSettings/ClientAppSettings.json'
 
       - name: Run
-        run: run-in-roblox --place test.rbxmx --script test.lua
+        run: run-in-roblox --place output.rbxl --script test.lua
