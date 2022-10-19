@@ -16,6 +16,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Install Packages
+        run: wally install
+
       - name: Build
         run: rojo build --output test.rbxmx
 
