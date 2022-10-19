@@ -1,11 +1,11 @@
-name: Lint
+name: Unit
 
 on:
   push:
 
 jobs:
-  linting:
-    name: Linting
+  testing:
+    name: Testing
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
