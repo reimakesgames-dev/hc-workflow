@@ -1,5 +1,16 @@
-for _ = 1, 5 do
-	print("mofos aint got nuthin on me")
-end
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ServerStorage = game:GetService("ServerStorage")
 
-task.wait(10)
+local Packages = ReplicatedStorage:WaitForChild("Packages")
+local Tests = ServerStorage:WaitForChild("Tests")
+
+local TestEZ = require(Packages.testez)
+
+local xorTest = Tests["xor.spec"]
+
+require(Tests.Bootstrap):run({
+	xorTest
+})
+-- TestEZ.TestBootstrap:run({
+-- 	xorTest
+-- })
